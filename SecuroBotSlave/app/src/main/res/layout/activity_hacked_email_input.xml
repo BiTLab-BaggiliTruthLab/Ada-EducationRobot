@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/hackedLayout"
+    android:background="@color/blue">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/have_i_been_pwned_logo_418x83"
+        android:scaleType="center"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hibp_instructions_header"
+        android:id="@+id/textView3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/emailAddressInput"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Email Address"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/cancel" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="Back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/back" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="Clear"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/clear" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="Search"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/ok" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/breachHeader"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hackedListView"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
